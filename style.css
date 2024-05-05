@@ -1,0 +1,160 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.top-section{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 100px;
+    margin-top: 25px;
+    width: 80%;
+    padding: 10px 10px;
+    box-shadow:  0 0 19px black;
+}
+.top-section input{
+    padding: 15px 15px;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+.top-section .fa-search{
+    z-index: -1;
+    margin-left: -195px;
+}
+.top-section button{
+    padding: 10px 23px;
+    margin-left: 200px;
+    border: none;
+    border-radius: 10px;
+    background: green;
+    margin-top: -50px;
+    color: azure;
+}
+.content-{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding: 10px 10px;
+    width: 95%;
+    display: block;
+    height: 60vh;
+}
+.navigation{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+}
+.navigation .button{
+    width: 100px;
+    color: orangered;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(74, 9, 100, 0.349);
+}
+/*Calculator styling*/
+form table{
+    border: 4px groove rgba(74, 9, 100, 0.349);
+    margin-left: 100px;
+}
+form table input{
+    width: 140px;
+    background: green;
+    margin-top: 15px;
+    padding: 6px 30px ;
+    margin-left: 20px;
+    color: white;
+    border: none;
+
+}
+.display{
+    background: gainsboro;
+    border: none;
+    width: 600px;
+    padding: 10px ;
+    font-size: 2.3rem;
+    color: black;
+}
+.phone-number .card-item  {
+    background: white;
+    padding: 12px 40px;
+    height: 60px;
+    cursor: pointer;
+    background: greenyellow;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+.card-item span .fa-user{
+    color: blue;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 80px;
+    background: gainsboro;
+}
+.card-item .client{
+    margin-left: 15px;
+    color: darkgreen;
+
+}
+.card-item .phone-no{
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .top-section{
+        width: 90%;
+
+        margin-left: 10px;
+    }
+
+    .top-section input{
+        width: 100px;
+    }
+    .top-section .fa-search{
+        margin-left: -120px;
+        width: 100px;
+        height: 50px;
+    }
+    .top-section button{
+        margin-left: 0px;
+    }
+    .content-{
+        height: 50vh;
+        background: gray;
+    }
+    .navigation {
+        margin-left: 10px;
+        }
+        /*Calculator styling*/
+    form table{
+        border: 4px groove rgba(74, 9, 100, 0.349);
+        margin-left: 10px;
+    }
+    form table input{
+        background: green;
+        margin-top: 5px;
+        width: 70px;
+        margin-left: 10px;
+        border: none;
+        color: white;
+
+    }
+    .display{
+        border: none;
+        width: 310px;
+        padding: 10px ;
+        font-size: 2.3rem;
+        color: black;
+    }
+    /*Card for contact page*/
+    .card-item{
+       text-align: start;
+        color: royalblue;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .card-item:hover{
+        background: rgba(16, 212, 13, 0.692);
+        color: white;
+    }
+}

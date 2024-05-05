@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <div class="container-flud">
+        <div class="top-section">
+            <div class="search">
+               <input type="text" name="" id="">
+                <span><i class="fa fa-search"></i></span>
+                <button>Search</button>
+            </div>
+            <div class="contact">
+                <p>    <span><i class="fa fa-user"></i></span> contact</p>
+            </div>
+            <div class="shopping">
+                <p><span><i class="fa fa-shopping-cart"></i></span> shopping</p>
+            </div>
+        </div>
+        <div class="content-">
+            <form name="Calculator" class = "calculator" >  
+            <table   >  
+            <tr>  
+            <td>  
+            <input type="text" class="display" name="Input" Size="35" id="display">  
+            <br>  
+            </td>  
+            </tr>  
+            <tr>  
+            <td>  
+            <input type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'">  
+            <input type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'">  
+            <input type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">  
+            <input type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '">  
+            <br>  
+            <input type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">  
+            <input type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">  
+            <input type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'">  
+            <input type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '">  
+            <br>  
+            <input type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">  
+            <input type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">  
+            <input type="button" name = "nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'">  
+            <input type="button" name = "mul" style="font-size:30px" value=" * "   
+            OnClick="Calculator.Input.value += ' * '">  
+            <br>  
+            <input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''">  
+            <input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
+            <input type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
+            <input type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '">  
+            <br>  
+            </td>  
+            
+            </tr>  
+            </table>  
+        </form>     
+
+        
+        </div>
+        <div class="navigation">
+            <a href="index.html" class="button">
+                <p><span><i class="fa fa-home fa-2x"></i></span> <br> home</p>
+            </a>
+            <a href="calculator.html" class="button">
+                <p><span><i class="fa fa-calculator fa-2x"></i></span> <br> calculator </p>
+            </a>
+            <a href="contact.html" class="button">
+                <p><span><i class="fa fa-phone fa-2x"></i></span> <br> contacts</p>
+            </a>
+            <a href="help.html" class="button">
+                <p><span><i class="fa fa-question fa-2x"></i></span> <br> Help</p>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
