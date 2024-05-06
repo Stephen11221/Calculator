@@ -59,6 +59,7 @@ body{
     margin-top: 20px;
     width: 400px;
 }
+/*popup    */
 .poppup-form{
     width: 700px;
     padding: 10px 14px;
@@ -89,7 +90,6 @@ body{
 }
 /*Navigation Styling*/
 .navigation{
-    margin-left: 100px;
     display: grid;
     grid-template-columns: repeat( 4, 1fr);
 }
@@ -178,28 +178,36 @@ form table input{
 }
 @media screen and (max-width: 576px) {
     .top-section{
-        width: 90%;
+        width: 80%;
         margin-left: 10px;
     }
-
+    
     .top-section input{
         width: 100px;
     }
     .top-section .fa-search{
-        margin-left: -120px;
-        width: 100px;
-        height: 50px;
+        display: none;
     }
     .top-section button{
-        margin-left: 0px;
+        margin-left: 10px;
+        margin-top: 20px;
     }
+    .top-section .contact{
+        margin-left: 10px;
+    }
+    .top-section >div{
+        width: 50px;
+        color: blue;
+    
+    }
+
     .content-{
-        height: 30vh;
+    
         background: gray;
     }
     /*home style*/
     .open-popup{
-        width: 350px;
+        width: 200px;
     }
     .home  table{
         margin-left: 50px;
@@ -236,9 +244,18 @@ form table input{
         background: rgba(16, 212, 13, 0.692);
         color: white;
     }
+    .navigation{
+        border-right: 10px groove green;
     
+    }
+    .navigation .button{
+        width: 70px;
+        margin-left: -10px;
+        font-size: 12px;
+        padding: 5px 5px;
+    }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
     .top-section{
         margin-left: 20px;
     }
@@ -248,13 +265,17 @@ form table input{
     }
     .open-popup{
         width: 400px;
-    }
+    } 
+    
     .content- table{
         margin-left: -20px;
     }
     form  table input{
         width: 80px;
         padding: 1px;
+    }
+    .display{
+        width: 400px;
     }
     .navigation{
         margin-top: 10px;
