@@ -183,7 +183,7 @@ form table input{
     }
     
     .top-section input{
-        width: 100px;
+        width: 200px;
     }
     .top-section .fa-search{
         display: none;
@@ -192,9 +192,11 @@ form table input{
         margin-left: 10px;
         margin-top: 20px;
     }
-    .top-section .contact{
-        margin-left: 10px;
+    .top-section .contact , .shopping{
+        margin-top: 40px;
+        
     }
+
     .top-section >div{
         width: 50px;
         color: blue;
@@ -214,7 +216,7 @@ form table input{
         top: 0;
         transform: translate(-50%, -50%) scale(0.1 );
         visibility: hidden;
-        transition: transform 0.4s , top 0.3s;
+        transition: transform 0.4s , top 10s;
         
     }
     
@@ -223,7 +225,7 @@ form table input{
     color: blue;
     visibility: visible;
     top: 50%;
-    transform: translate(-50%, -50%) scale(1 );
+    transform: translate(-50%, -50%) scale(0.7 );
  
 
     }
