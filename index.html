@@ -22,8 +22,33 @@
                 <p><span><i class="fa fa-shopping-cart"></i></span> shopping</p>
             </div>
         </div>
-        <div class="content-">
-            <table border=" 1"  cellspacing="3" cellpadding="4">
+        <div class="content- home">
+            <button class="btn-add" onclick="openPopup()">New user </button>
+            <div class="poppup-form" id="popup">
+                <h1>Add USER <i class="fa fa-user-secret  "></i></h1>
+                <p>fill in your data</p>
+                <form action="" class="add-user">
+                    <div class="row">
+                        <div class="col-lg">
+                            <label for="">Name</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="col-lg">
+                            <label for="">ID NO</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="col-lg">
+                            <label for="">Details</label>
+                            <textarea name="" id="" placeholder="where do you come from"  cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <button class="save-btn">Save</button>
+                    <button class="close-btn" onclick="closePopup()">CLOSE</button>
+                </form>
+            </div>
+
+            <table border=" 1"   cellspacing="3" cellpadding="4">
                 <tr>
                     <th>Name</th>
                     <th>ID NO</th>
@@ -56,6 +81,6 @@
             </a>
         </div>
     </div>
-    
+    <script src="popup.js "></script>
 </body>
 </html>
