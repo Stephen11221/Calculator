@@ -61,7 +61,7 @@ body{
 }
 /*popup    */
 .poppup-form{
-    width: 700px;
+    width: 70%;
     padding: 10px 14px;
     backdrop-filter: blur(10px);
 
@@ -206,9 +206,34 @@ form table input{
         background: gray;
     }
     /*home style*/
-    .open-popup{
-        width: 200px;
+    .poppup-form{
+        
+        backdrop-filter: blur(10px);
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%) scale(0.1 );
+        visibility: hidden;
+        transition: transform 0.4s , top 0.3s;
+        
     }
+    
+    .open-popup{
+    
+    color: blue;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1 );
+ 
+
+    }
+    .open-popup input{
+        width: 300px;
+    }
+    .open-popup textarea{
+        width: 300px;
+    }
+    
     .home  table{
         margin-left: 50px;
     }
