@@ -282,13 +282,14 @@ form table input{
     }
     
 .create{
-    width: 40%;
+    width: 50%;
     padding: 10px 14px;
     background: rgba(0, 0, 0, 0.365);
     backdrop-filter: blur(30px);
     position: absolute;
     left: 50%;
     top: 0;
+    height: 50vh;
     transform: translate(-50%, -50%) scale(0.1 );
     visibility: hidden;
     transition: transform 0.2s , top 0.1s;
@@ -301,7 +302,19 @@ form table input{
         top: 46%;
         color: wheat;
         height: 70vh;
-        transform: translate(-50%, -50%) scale(0.9);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .create-open  form
+    .create-open form input{
+        width: 150px;
+        margin-top: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 5px ;
+        background: none;
+        margin-bottom: 10px;
+        border-bottom: 2px solid navy;
     }
     
     /*home style*/
@@ -329,6 +342,7 @@ form table input{
     .open-popup input{
         width: 300px;
     }
+
     .open-popup textarea{
         width: 300px;
     }
