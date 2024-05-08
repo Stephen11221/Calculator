@@ -176,6 +176,78 @@ form table input{
     border: none;
     color: white;
 }
+/*Sigh/login*/
+/* icon*/
+.icon i{
+    margin-top: 50px;
+    font-size: 200px;
+}
+.button-section{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-section button {
+    padding: 10px 10px;
+    background: #000;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+.button-section a{
+    padding: 10px 10px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.button-section p{
+    margin-top: 50px;
+}
+.button-section .login-btn{
+    position:absolute;
+    margin-top: 55px;
+    margin-left: -90px;
+}
+.create{
+    width: 70%;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.365);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) scale(0.1 );
+    visibility: hidden;
+    transition: transform 0.4s , top 0.3s;
+    
+}
+/* create popup*/
+.create-open{
+    color: black;
+    visibility: visible;
+    border-radius: 20px;
+    top: 50%;
+    color: wheat;
+    
+    transform: translate(-50%, -50%) scale(1 );
+}
+.create form{
+    margin-top: 50px;
+}
+.create form .create-btn{
+    padding: 10px 10px;
+    background: #000;
+    cursor: pointer;
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 576px) {
     .top-section{
         width: 80%;
@@ -194,6 +266,7 @@ form table input{
     }
     .top-section .contact , .shopping{
         margin-top: 40px;
+        margin-left: 22px;
         
     }
 
@@ -207,6 +280,30 @@ form table input{
     
         background: gray;
     }
+    
+.create{
+    width: 40%;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.365);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) scale(0.1 );
+    visibility: hidden;
+    transition: transform 0.2s , top 0.1s;
+    
+}
+    .create-open{
+        
+        visibility: visible;
+        border-radius: 20px;
+        top: 46%;
+        color: wheat;
+        height: 70vh;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    
     /*home style*/
     .poppup-form{
         
@@ -216,7 +313,7 @@ form table input{
         top: 0;
         transform: translate(-50%, -50%) scale(0.1 );
         visibility: hidden;
-        transition: transform 0.4s , top 10s;
+        transition: transform 0.4s , top 0.7s;
         
     }
     
@@ -260,6 +357,7 @@ form table input{
         font-size: 2.3rem;
         color: black;
     }
+
     /*Card for contact page*/
     .card-item{
        text-align: start;

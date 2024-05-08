@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <div class="container-flud">
+        <div class="top-section">
+            <div class="search">
+               <input type="text" name="" id="">
+                <span><i class="fa fa-search"></i></span>
+                <button>Search</button>
+            </div>
+            <div class="contact">
+                <p>    <span><i class="fa fa-user"></i></span> contact</p>
+            </div>
+            <div class="shopping">
+                <p><span><i class="fa fa-shopping-cart"></i></span> shopping</p>
+            </div>
+        </div>
+        <div class="content- home">
+            
+            <button class="btn-add" onclick="openPopup()">New user </button>
+            <div class="poppup-form" id="popup">
+                <h1>Add USER <i class="fa fa-user-secret  "></i></h1>
+                <p>fill in your data</p>
+                <form action="" class="add-user">
+                    <div class="row">
+                        <div class="col-lg">
+                            <label for="">Name</label>
+                            <input type="text" name="" id="name">
+                        </div>
+                        <div class="col-lg">
+                            <label for="">ID NO</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="col-lg">
+                            <label for="">Details</label>
+                            <textarea name="" id="" placeholder="where do you come from"  cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <button class="save-btn">Save</button>
+                    <button class="close-btn" onclick="closePopup()">CLOSE</button>
+                </form>
+            </div>
+
+            <table border=" 1"   cellspacing="3" cellpadding="4">
+                <tr>
+                    <th>Name</th>
+                    <th>ID NO</th>
+                    <th>Detail </th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="myPloty" width="100%" max-width="700px"></div>
+        </div>
+        <div class="navigation">
+            <a href="Dashboard.html" class="button">
+                <p><span><i class="fa fa-home "></i></span> <br> home</p>
+            </a>
+            <a href="calculator.html" class="button">
+                <p><span><i class="fa fa-calculator "></i></span> <br> calculator </p>
+            </a>
+            <a href="contact.html" class="button">
+                <p><span><i class="fa fa-phone "></i></span> <br> contacts</p>
+            </a>
+            <a href="help.html" class="button">
+                <p><span><i class="fa fa-question "></i></span> <br> Help</p>
+            </a>
+        </div>
+    </div>
+    <script src="popup.js "></script>
+</body>
+</html>

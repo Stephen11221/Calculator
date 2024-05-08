@@ -4,84 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-flud">
-        <div class="top-section">
-            <div class="search">
-               <input type="text" name="" id="">
-                <span><i class="fa fa-search"></i></span>
-                <button>Search</button>
-            </div>
-            <div class="contact">
-                <p>    <span><i class="fa fa-user"></i></span> contact</p>
-            </div>
-            <div class="shopping">
-                <p><span><i class="fa fa-shopping-cart"></i></span> shopping</p>
-            </div>
-        </div>
-        <div class="content- home">
-            
-            <button class="btn-add" onclick="openPopup()">New user </button>
-            <div class="poppup-form" id="popup">
-                <h1>Add USER <i class="fa fa-user-secret  "></i></h1>
-                <p>fill in your data</p>
-                <form action="" class="add-user">
-                    <div class="row">
-                        <div class="col-lg">
-                            <label for="">Name</label>
-                            <input type="text" name="" id="name">
-                        </div>
-                        <div class="col-lg">
-                            <label for="">ID NO</label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div class="col-lg">
-                            <label for="">Details</label>
-                            <textarea name="" id="" placeholder="where do you come from"  cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <hr class="line">
-                    <button class="save-btn">Save</button>
-                    <button class="close-btn" onclick="closePopup()">CLOSE</button>
-                </form>
-            </div>
+    <center>
+       <span class="icon"><i class="fa fa-users"></i></span>
+    </center>
+    <div class="button-section">
+        <a href="Dashboard.html" class="start-btn " > Dashboard</a>
+        <p>I don't have an account</p>
+        <button href="" class="btn-create" onclick="creatAcc()">Create Account</button>
+        <a href="" class="login-btn" onclick="login()">Login </a>
+        <div class="create" id="create">
+            <span class="close-btn-2 "><i class="fa fa-user fa-4x"></i></span>
+            <form action="" method="post">
+                
+            <label for="" class="firstlabel">Name</label> <br>
+            <input type="text" name="" id=""> <br>
+            <label for="">Email</label><br>
+            <input type="email" > <br>
+            <label for="">Password</label> <br>
+            <input type="password" name="" id=""> <br>
+            <button class="create-btn" type="submit">Create</button> <br>
+            <button class="create-btn" type="button"   onclick="closeCreate()"> Close subform</button>
 
-            <table border=" 1"   cellspacing="3" cellpadding="4">
-                <tr>
-                    <th>Name</th>
-                    <th>ID NO</th>
-                    <th>Detail </th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            </form>
         </div>
-        <div class="navigation">
-            <a href="index.html" class="button">
-                <p><span><i class="fa fa-home "></i></span> <br> home</p>
-            </a>
-            <a href="calculator.html" class="button">
-                <p><span><i class="fa fa-calculator "></i></span> <br> calculator </p>
-            </a>
-            <a href="contact.html" class="button">
-                <p><span><i class="fa fa-phone "></i></span> <br> contacts</p>
-            </a>
-            <a href="help.html" class="button">
-                <p><span><i class="fa fa-question "></i></span> <br> Help</p>
-            </a>
-        </div>
+
     </div>
-    <script src="popup.js "></script>
+    <script src="popup.js">
+     
+    </script>
 </body>
 </html>
